@@ -1,18 +1,21 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="https://rawgit.com/jeromeetienne/ar.js/2.0.1/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
     <style>
       body { margin: 0; overflow: hidden; }
     </style>
   </head>
   <body>
     <a-scene embedded arjs>
-      <!-- Marcador tipo 'Hiro' -->
+      <!-- MARCADOR -->
       <a-marker preset="hiro">
-        <a-text value="Hola" position="0 0.5 0" align="center" color="blue"></a-text>
+        <a-text value="Hola" position="0 0.5 0" align="center" color="red"></a-text>
       </a-marker>
+
+      <!-- CÁMARA -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
+
